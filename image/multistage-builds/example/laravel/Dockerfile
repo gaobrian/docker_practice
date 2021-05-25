@@ -45,7 +45,7 @@ RUN cd ${LARAVEL_PATH} \
       && mkdir -p storage/logs \
       && chmod -R 777 storage
 
-FROM nginx:alpine as nginx
+FROM nginx:1.21-alpine as nginx
 
 ARG LARAVEL_PATH=/app/laravel
 
